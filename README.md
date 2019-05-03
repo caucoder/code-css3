@@ -1,6 +1,9 @@
+## 项目地址
+
 ## 学习笔记
 
-[`1. css selector and basic knowledge`](content/README.md)
+1. [`css selector and basic knowledge`](content/README.md)
+   1. [相关项目](practice-code/basic/finishied-basic-css-lesson/index.html)
 
 ---
 
