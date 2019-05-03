@@ -169,9 +169,143 @@ learning css
    font-size: 50%;
    ```
 
-2) The Box Model
+2. font-family 字体
+
+   ```css
+   font-family: arial;
+   ```
+
+3. font-weight 颜色深度
+
+   ```css
+   font-weight: bold;
+   ```
+
+4. text-decoration 下划线，划线
+
+5. text-transform 大小写，单词开头字母大写（capitalize）
+
+6. text color
+
+   ```css
+   color: red;
+   background-color: black;
+   ```
+
+7. letter spacing | word spacing | line height
+   ```css
+   letter-spacing: 2px;
+   word-spacing: 2px;
+   line-height: 2px;
+   ```
+8. paragraph spacing
+
+   ```css
+   /*用margin来实现*/
+   margin-bottom: 32px;
+   ```
+
+9. The Box Model
    ![](./imgs/box-model.png)
+
+10. margin ，padding（一样）
+
+    ```css
+    /*4 个参数*/
+    margin: top right bottom left；
+    /*3个参数*/
+    margin: top (right left) bottom;
+    /*2个参数*/
+    margin: (top bottom) (right left)；
+    /*1个参数*/
+    margin: represent all;
+
+    /*auto 属性 center*/
+    margin: 30px auto;
+    ```
+
+    > 注意： margin-bottom 与另外一个 margin-top 不上下叠加，只会取其中最大值。
+
+    > width: 100% 问题（margin 与 padding 会额外加进去）
+
+11. border
+
+    ```css
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-top-color: red;
+
+    /*简写*/
+    border-top: 10px solid red;
+
+    /*四周边框*/
+    border: 10px solid red;
+    ```
+
+12. [`block level elements & inline elements`](https://www.w3resource.com/html/HTML-block-level-and-inline-elements.php)(是否是另起一行)
+
+    > inline elements stack side by side.
+
+    ```css
+    /*div 是属于block*/
+    /*a span是属于inline*/
+    display: inline-block; /*在inline中设置block 如导航*/
+    ```
+
+13. width and height 数字 px，%；
+
+14. Rounded corners
+
+    ```css
+    .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: brown;
+    }
+    ```
+
+15. background
+
+    ```css
+    background-imgs: url();
+    /*round属性,图片会自动分布，不会出现超出边界截图的情况*/
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /*简写*/
+    background: url() np-repeat center;
+
+    background-size: 200px;
+    ```
+
+    multiple backgrounds(一个图片做背景，一个是 logo)
+
+    ```css
+    background-img: url(), url();
+    background-repeat: np-repeat;
+    background-position: center, top left;
+    background-size: 300px, 100%;
+    ```
+
+16. opacity 透明度对所有都生效，rgba()只对背景颜色
+
+17. text-align 不仅对使用文字，对图片也生效
+
+18. gradient 颜色渐变
+
+15) [`Box shadow online design网站`](https://www.cssmatic.com/box-shadow)
+
+---
+
+## final easy website
+
+- [访问链接](https://q10viking.github.io/test/)
+
+![](./imgs/result.png)
 
 ## videos
 
 [youtube-CSS Tutorial For Beginners](https://www.youtube.com/watch?v=MlJrAhGVIis&list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT&index=16)
+
+[火狐 css 官网指南](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background)
